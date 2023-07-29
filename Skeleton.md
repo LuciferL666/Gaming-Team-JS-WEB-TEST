@@ -5,3 +5,4 @@
     * 3.2. body parser
     * 3.3 add routes
 4. Add static files and resources, meaning add css and images 
+5. Add views folder with ready htmls meaning in src create new folder views 

@@ -4,3 +4,4 @@
     * 3.1. add static middleware
     * 3.2. body parser
     * 3.3 add routes
+4. Add static files and resources, meaning add css and images 

@@ -6,3 +6,12 @@
     * 3.3 add routes
 4. Add static files and resources, meaning add css and images 
 5. Add views folder with ready htmls meaning in src create new folder views 
+6. Add express-handlebarse view engine
+    * 6.1 Install, meaning npm i express-handlebars
+    * 6.2 Add to express
+    * 6.3 Config extension
+    * 6.4 Config views folder (only for src)
+    * 6.5 Add main layout, meaning in folder views create new folder layouts and create file main.hbs 
+    * 6.6 Add partials folder, meaning in views create new folder partials 
+    * 6.7 Render home page in routes.js
+    * 6.8 fix styles and images

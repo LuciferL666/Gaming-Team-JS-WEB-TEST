@@ -15,4 +15,7 @@
     * 6.6 Add partials folder, meaning in views create new folder partials 
     * 6.7 Render home page in routes.js
     * 6.8 fix styles and images
-7. Add controllers folder with home controller, meaning in src creat folder controller 
+7. Add controllers folder with home controller, meaning in src creat folder controller
+8. Connect database
+    * 8.1 install mongoose, meaning npm i mongoose
+    * 8.2 connect database

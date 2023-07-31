@@ -1,10 +1,16 @@
 const express = require("express");
 const handlebars = require('express-handlebars'); //6.2
 const path = require('path') //6.8
+const mongoose = require('mongoose'); //8.2
 
 const routes = require("./routes"); //3.3
 
 const app = express();
+
+//TODO: CHANGE DB NAME
+mongoose.connect(`mongodb://localhost:27017/Gaming-Team`)
+.then(() => console.log('DB connected successfully'))
+.catch(err => console.log('DB Error', err.message));
 
 app.engine('hbs', handlebars.engine({ //6.3
     extname: 'hbs'

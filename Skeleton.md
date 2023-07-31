@@ -15,7 +15,14 @@
     * 6.6 Add partials folder, meaning in views create new folder partials 
     * 6.7 Render home page in routes.js
     * 6.8 fix styles and images
+    * 6.9 fix header navigation to home, meanin change paths in main.hbs
 7. Add controllers folder with home controller, meaning in src creat folder controller
 8. Connect database
     * 8.1 install mongoose, meaning npm i mongoose
     * 8.2 connect database
+9. Authentication 
+    * 9.1 Add user controller
+    * 9.2 Add controller to routes
+    * 9.3 Render login page, and create in views folder users and move login.html there 
+    * 9.4 fix header navigation to login, register and logout, meaning change paths in main.hbs
+    * 9.5 render register page 

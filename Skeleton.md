@@ -26,3 +26,4 @@
     * 9.3 Render login page, and create in views folder users and move login.html there 
     * 9.4 fix header navigation to login, register and logout, meaning change paths in main.hbs
     * 9.5 render register page 
+10. Add user model, meaning in src create folder modules and create file user.js

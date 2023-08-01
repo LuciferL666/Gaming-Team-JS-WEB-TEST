@@ -30,3 +30,5 @@
 11. Add user manager, meaning in src create folder managers and crete file userManager.js
     * 11.1 Add login and register methods (empty)
     * 11.2 Require in user controller
+12. Modify login and register forms, meaning put correct data in login.hbs and register.hbs
+13. Add Login and register post actions

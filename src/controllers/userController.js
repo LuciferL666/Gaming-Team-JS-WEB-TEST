@@ -1,5 +1,7 @@
 const router = require('express').Router(); //9.1
 
+const userManager = require('../managers/userManager') // 11.2
+
 router.get('/login', (req, res) =>{ //9.1
 res.render('users/login'); //9.3
 });

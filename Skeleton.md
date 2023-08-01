@@ -27,3 +27,6 @@
     * 9.4 fix header navigation to login, register and logout, meaning change paths in main.hbs
     * 9.5 render register page 
 10. Add user model, meaning in src create folder modules and create file user.js
+11. Add user manager, meaning in src create folder managers and crete file userManager.js
+    * 11.1 Add login and register methods (empty)
+    * 11.2 Require in user controller

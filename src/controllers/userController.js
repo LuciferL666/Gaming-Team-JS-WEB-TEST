@@ -6,6 +6,10 @@ router.get('/login', (req, res) =>{ //9.1
 res.render('users/login'); //9.3
 });
 
+router.post('/login', (req, res) =>{
+    const {} = req.body
+}) //13
+
 router.get('/register', (req, res) => { //9.5
     res.render('users/register'); //9.5
 });

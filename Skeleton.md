@@ -39,3 +39,6 @@
 15. Hash password
     * 15.1 install bcrypt, meaning npm i bcrypt
     * 15.2 hash password, in user model user.js
+16. Login
+    * 16.1 Find user by email
+    * 16.2 Validate password with hash 

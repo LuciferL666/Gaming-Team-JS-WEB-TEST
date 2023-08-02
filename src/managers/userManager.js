@@ -1,6 +1,20 @@
 const User = require('../modules/user');
 
-exports.login = ( email, password ) =>{
+const bcrypt = require('bcrypt');
+
+exports.login = async ( email, password ) =>{
+    //find user by email
+const user = await User.findOne({ email });//16.1
+
+if(!user){ //16.1
+    throw new Error('Invalid user or password'); //16.1
+}
+
+    // check password
+    const isValid = await bcrypt.compare(password, user.password) //16.2
+    if(!isValid){ //16.2
+        throw new Error('Invalid user or password'); //16.2
+    } //16.2
 
 };
 

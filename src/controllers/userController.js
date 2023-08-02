@@ -9,7 +9,7 @@ res.render('users/login'); //9.3
 router.post('/login', async(req, res) =>{
     const { email, password } = req.body;
 
-    await userManager.login(email, password);
+    const token = await userManager.login(email, password);
 
     res.send('logged in')
 }); //13

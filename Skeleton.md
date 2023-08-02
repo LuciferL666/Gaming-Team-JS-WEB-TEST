@@ -41,4 +41,9 @@
     * 15.2 hash password, in user model user.js
 16. Login
     * 16.1 Find user by email
-    * 16.2 Validate password with hash 
+    * 16.2 Validate password with hash
+17. Generate jwt token
+    * 17.1 Install jsonwebtoken, meaning npm i jsonwebtoken
+    * 17.2 Promisify jsonwebtoken, meaning in src create folder lib with file jwt.js
+    * 17.3 Generate token in manager.login
+    * 17.4 Create secret 

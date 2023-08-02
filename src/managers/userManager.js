@@ -5,7 +5,7 @@ exports.login = ( email, password ) =>{
 };
 
 exports.register = async (userData) => {
-    const user = User.findOne({ username: userData.username}); //14.3
+    const user = await User.findOne({ username: userData.username}); //14.3
     if(user){ //14.3
         throw new Error('Username already exists'); //14.3
     } //14.3

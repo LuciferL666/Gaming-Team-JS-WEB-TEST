@@ -36,3 +36,6 @@
     * 14.1 Add unique for username
     * 14.2 Validate repeat password
     * 14.3 Validate if user already exists
+15. Hash password
+    * 15.1 install bcrypt, meaning npm i bcrypt
+    * 15.2 hash password, in user model user.js

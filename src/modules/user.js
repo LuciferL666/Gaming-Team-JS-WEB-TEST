@@ -4,6 +4,7 @@ const userSchema = new mongoose.Schema({
 username: {
     type: String,
     required: true,
+    unique: true, //14.1
 },
 password: {
     type: String,
@@ -12,6 +13,14 @@ password: {
 email: {
     type: String,
     required: true,
+    unique: true, //14.1
+}
+});
+
+userSchema.virtual('repeatPassword')
+.set(function(value){
+if(this.password !== value){
+    throw new Error('Password missmatch!')
 }
 });
 

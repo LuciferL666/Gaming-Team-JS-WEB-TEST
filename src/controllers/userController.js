@@ -19,7 +19,11 @@ router.get('/register', (req, res) => { //9.5
 });
 
 router.post('/register', async(req, res) =>{
-    
-})
+    const { username, email, password, repeatPassword } =  req.body;
+
+    await userManager.register({username, email, password, repeatPassword});
+
+    res.send('registered')
+});
 
 module.exports = router //9.1

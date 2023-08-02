@@ -32,3 +32,7 @@
     * 11.2 Require in user controller
 12. Modify login and register forms, meaning put correct data in login.hbs and register.hbs
 13. Add Login and register post actions
+14. Implement user manager login and register
+    * 14.1 Add unique for username
+    * 14.2 Validate repeat password
+    * 14.3 Validate if user already exists

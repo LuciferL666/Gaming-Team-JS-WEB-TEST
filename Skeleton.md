@@ -52,3 +52,7 @@
     * 18.2 Config cookie parser, meaning in index.js require
     * 18.3 Set cookie with token, meaning in userController to set cookie after token
 19. Logout, meaning in userController
+20. Authentication middleware, meaning create folder in src middlewares with file authMiddleware.js
+    * 20.1 create base middleware
+    * 20.2 use middleware meaning in index.js import middleware
+    * 20.3

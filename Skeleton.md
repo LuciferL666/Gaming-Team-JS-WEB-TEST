@@ -46,4 +46,8 @@
     * 17.1 Install jsonwebtoken, meaning npm i jsonwebtoken
     * 17.2 Promisify jsonwebtoken, meaning in src create folder lib with file jwt.js
     * 17.3 Generate token in manager.login
-    * 17.4 Create secret 
+    * 17.4 Create secret
+18. Return token in cookie
+    * 18.1 Install cookie parser, meaning npm i cookie-parser
+    * 18.2 Config cookie parser, meaning in index.js require
+    * 18.3 Set cookie with token, meaning in userController to set cookie after token

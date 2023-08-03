@@ -11,7 +11,9 @@ router.post('/login', async(req, res) =>{
 
     const token = await userManager.login(email, password);
 
-    res.send('logged in')
+    res.cookie('token', token);
+
+    res.redirect('/')
 }); //13
 
 router.get('/register', (req, res) => { //9.5
@@ -23,7 +25,7 @@ router.post('/register', async(req, res) =>{
 
     await userManager.register({username, email, password, repeatPassword});
 
-    res.send('registered')
+    res.redirect('/users/login')
 });
 
 module.exports = router //9.1

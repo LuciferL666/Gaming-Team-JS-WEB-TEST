@@ -51,3 +51,4 @@
     * 18.1 Install cookie parser, meaning npm i cookie-parser
     * 18.2 Config cookie parser, meaning in index.js require
     * 18.3 Set cookie with token, meaning in userController to set cookie after token
+19. Logout, meaning in userController

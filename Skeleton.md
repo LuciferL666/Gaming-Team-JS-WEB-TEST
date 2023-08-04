@@ -55,4 +55,7 @@
 20. Authentication middleware, meaning create folder in src middlewares with file authMiddleware.js
     * 20.1 create base middleware
     * 20.2 use middleware meaning in index.js import middleware
-    * 20.3
+    * 20.3 Implement auth middleware
+    * 20.4 create in src folder config for SECRET
+    * 20.5 attach decoded token to request
+    * 20.6 handle invalid token

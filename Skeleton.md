@@ -60,3 +60,6 @@
     * 20.5 attach decoded token to request
     * 20.6 handle invalid token
 21. Authorization middleware
+22. Dynamic navigation
+    * 22.1 add conditional in main layout
+    * 22.2 add res locals, in authMiddleware

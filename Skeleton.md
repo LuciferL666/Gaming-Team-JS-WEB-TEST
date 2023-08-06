@@ -59,3 +59,4 @@
     * 20.4 create in src folder config for SECRET
     * 20.5 attach decoded token to request
     * 20.6 handle invalid token
+21. Authorization middleware

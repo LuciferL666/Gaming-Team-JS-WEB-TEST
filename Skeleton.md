@@ -67,3 +67,7 @@
     * 23.1 Add 404 page fix to hbs change static if its need it and put it in file homeController, and routes.js
         * redirect missing route to 404
     * 23.2 add global error handler (optional), meaning in folder middleware create file errorHandlerMiddleware
+24. Show error notifications
+    * 24.1 Add error container to main layout
+    * 24.2 Show error container conditionaly
+    * 24.3 pass error to render

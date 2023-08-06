@@ -12,6 +12,15 @@
 </head>
 
 <body>
+<!-- 24.2 Show error container conditionaly -->
+{{#if error}}
+<div>
+    <div class="errorContainer">
+<p>{{error}}</p>
+    </div>
+</div>
+{{/if}}
+
     <header class="header">
         <nav>
             <img src="/images/logo.jpg" class="logo"> <!-- need to remove static -->

@@ -63,3 +63,7 @@
 22. Dynamic navigation
     * 22.1 add conditional in main layout
     * 22.2 add res locals, in authMiddleware
+23. Error handling
+    * 23.1 Add 404 page fix to hbs change static if its need it and put it in file homeController, and routes.js
+        * redirect missing route to 404
+    * 23.2 add global error handler (optional), meaning in folder middleware create file errorHandlerMiddleware

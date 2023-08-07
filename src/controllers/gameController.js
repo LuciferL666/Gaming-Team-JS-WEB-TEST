@@ -8,7 +8,10 @@ router.get('/create', (req, res)=>{
 });
 
 router.post('/create', async(req, res)=>{
-    const gameData = req.body
+    const gameData = { //30
+        ...req.body, //30
+        owner: req.user._id, //30
+    }
 
     try {
         await gameManager.create(gameData);

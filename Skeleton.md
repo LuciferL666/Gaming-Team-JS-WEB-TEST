@@ -85,4 +85,5 @@
     * 29.1 create gameManager file in folder managers and need to call it in gameController
     * 29.2 remove router for 404 
     * 29.3 correct in folder modules file game.js
+30. Get owner of the game from photoController.js from const gameData
 

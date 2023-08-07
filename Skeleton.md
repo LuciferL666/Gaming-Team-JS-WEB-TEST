@@ -74,3 +74,4 @@
     * 24.4 optionally error message extractor, meaning in src create folder utils and inside file errorHelpers.js
     * 24.5 add local error handler
 25. Automatically login after registration
+26. Creating gameSchema, meaning in folder modules crate file Game.js

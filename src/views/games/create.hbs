@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Page - Gaming Team</title>
-    <link rel="stylesheet" href="./static/css/styles.css" />
-</head>
-
-<body>
-
-    <header class="header">
-        <nav>
-            <img src="./static/images/logo.jpg" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">All Games Code</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Create Game Offer</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="create">
+<main id="create">
         <!-- In case of error, you should display div with class "errorContainer" -->
         <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
 
@@ -39,7 +11,7 @@
             <div class="create-container-info">
                 <h1>Create Game Code Offer</h1>
                 <h4>Post your code to sell</h4>
-                <form action="#" method="">
+                <form method="POST">
                     <label>Platform:</label>
                     <select id="platform" name="">
                         <option value="">-------</option>
@@ -50,26 +22,18 @@
                         <option value="XBOX">XBOX</option>
                     </select>
                     <label>Name:</label>
-                    <input type="text" id="name" name="">
+                    <input type="text" id="name" name="name">
                     <label>Image:</label>
-                    <input type="text" id="image" name="" placeholder="http://...">
+                    <input type="text" id="image" name="image" placeholder="http://...">
                     <label>Price:</label>
-                    <input type="number" id="price" name="">
+                    <input type="number" id="price" name="price">
                     <label>Genre:</label>
-                    <input type="text" id="genre" name="">
+                    <input type="text" id="genre" name="genre">
                     <label>Description:</label>
-                    <textarea id="description" name=""></textarea>
+                    <textarea id="description" name="description"></textarea>
 
                     <input type="submit" id="btn" value="CREATE"></input>
                 </form>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>Back-End 2023</p>
-    </footer>
-
-</body>
-
-</html>

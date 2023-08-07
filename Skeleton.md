@@ -75,3 +75,9 @@
     * 24.5 add local error handler
 25. Automatically login after registration
 26. Creating gameSchema, meaning in folder modules crate file Game.js
+27. Create folder games in view and put create.html inside
+    * delete all accept main in create.html fill date and make it to hbs 
+28. Setup create game 
+    * 28.1 in folder controllers create file gameController
+    * 28.2 fix the path in main.hbs
+    * 29.3 setup router in routes.js

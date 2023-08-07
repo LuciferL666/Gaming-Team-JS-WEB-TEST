@@ -81,3 +81,8 @@
     * 28.1 in folder controllers create file gameController
     * 28.2 fix the path in main.hbs
     * 29.3 setup router in routes.js
+29. Create router post for create game
+    * 29.1 create gameManager file in folder managers and need to call it in gameController
+    * 29.2 remove router for 404 
+    * 29.3 correct in folder modules file game.js
+

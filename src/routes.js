@@ -9,9 +9,9 @@ const gameController = require('./controllers/gameController');
 router.use(homeController); // 7
 router.use('/users' , userController); //9.2
 router.use('/games', gameController);
-router.get('*', (req, res)=>{ //23.1
-    res.redirect('/404') //23.1
-})
+// router.get('*', (req, res)=>{ //23.1
+//     res.redirect('/404') //23.1
+//})
 
 
 

@@ -86,4 +86,10 @@
     * 29.2 remove router for 404 
     * 29.3 correct in folder modules file game.js
 30. Get owner of the game from photoController.js from const gameData
-
+31. Setup catalog
+    * 31.1 move catalog.html in folder games in view
+    * 31.2 delete all accept main 
+    * 31.3 change it to hbs
+    * 31.4 then in gameController create router for catalog
+    * 31.5 in partials create file gameCard.hbs and trasfer from catalog one of the games then change date with real one 
+    * 31.5 exports all game data in gameManager file

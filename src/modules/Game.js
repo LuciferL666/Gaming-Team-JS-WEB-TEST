@@ -1,39 +1,72 @@
 const mongoose = require('mongoose');
 
+//create Shema
 const gameSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: [true, 'Name is required'],
+        required: [true, 'Name is requered!'],
+        minLength: [4, 'The name should be at least four characters.']
     },
-    image: {
+    imageUrl: {
         type: String,
-        require: [true, 'ImageUrl is required'],
+        required: [true, 'Image is requered!'],
     },
     price: {
         type: Number,
-        require: [true, 'Price is required'],
+        required: [true, 'Price is requered!'],
+        validate: {
+            validator: (value) => value > 0,
+            message: 'The price should be a positive number!'
+        }
     },
     description: {
         type: String,
-        require: [true, 'Description is required'],
+        required: [true, 'Description is requered!'],
+        minLength: [10, 'The description should be at least 10 characters long!']
     },
     genre: {
         type: String,
-        require: [true, 'Ganre is required'],
+        required: [true, 'Genre is requered!'],
+        minLength: [2, 'The Genre should be at least 2 characters long!']
     },
     platform: {
         type: String,
-        require: [true, 'Platform is required'],
-    },
-    boughtBy: {
+        required: [true, 'Platform is requered!'],
+        validate: {
+            validator: (value) => {
+                const validTypes = ['PC', 'Nintendo', 'PS4', 'PS5', 'XBOX'];
+                const indexOftype = validTypes.findIndex(type => type.toLowerCase() === value.toLowerCase());
+                if (indexOftype !== -1) {
+                    return validTypes[indexOftype];
+                }
+
+                return false;
+            }
+        }
 
     },
+    boughtBy: [{
+        type: mongoose.Types.ObjectId,
+        ref: 'User'
+    }],
     owner: {
         type: mongoose.Types.ObjectId,
         ref: 'User'
     }
 });
 
+
+gameSchema.pre('save', function (next) {
+    const validTypes = ['PC', 'Nintendo', 'PS4', 'PS5', 'XBOX'];
+    const indexOftype = validTypes.findIndex(type => type.toLowerCase() === this.platform.toLowerCase());
+    if (indexOftype !== -1) {
+        this.platform = validTypes[indexOftype];
+    }
+
+    next();
+});
+
+//create Model 
 const Game = mongoose.model('Game', gameSchema);
 
-module.exports = Game
+module.exports = Game;

@@ -21,9 +21,9 @@ app.engine('hbs', handlebars.engine({ //6.3
 app.set('view engine', 'hbs'); //6.3
 app.set('views', 'src/views'); //6.4
 
-app.use(express.static(path.resolve(__dirname, 'public'))) //6.8
 
-app.use(express.static("public")); // 3.1
+//app.use(express.static("public")); // 3.1
+app.use(express.static(path.resolve(__dirname, 'public'))) //6.8
 app.use(express.urlencoded({ extended: false })); //3.2
 app.use(cookiePraser()); //18.2
 app.use(auth); //20.2 important to be after cookieParser

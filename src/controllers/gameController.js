@@ -27,4 +27,24 @@ router.post('/create', async(req, res)=>{
     }
 });
 
+router.get('/:gameId/details', async (req, res) => {
+    const game = await gameManager.getOne(req.params.gameId).lean();
+    let isBought = false;
+    let isLogin = false;
+    if (!game) {
+        return res.redirect('/404');
+    }
+
+    isOwner = game.owner?.toString() === req.user?._id;
+    if (req.user) {
+        isLogin = true;
+        const userId = req.user._id;
+        const gameId = req.params.gameId;
+        isBought = await gameManager.hasBought(userId, gameId);
+        console.log(isBought);
+    }
+
+    res.render("games/details", { game, isLogin, isOwner, isBought })
+});
+
 module.exports = router;

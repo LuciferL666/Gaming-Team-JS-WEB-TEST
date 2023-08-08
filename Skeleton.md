@@ -93,3 +93,7 @@
     * 31.4 then in gameController create router for catalog
     * 31.5 in partials create file gameCard.hbs and trasfer from catalog one of the games then change date with real one 
     * 31.5 exports all game data in gameManager file
+32. Game Details page
+    * 32.1 move details.html in games folder in view then change it to hbs and delete all accept main
+    * 32.2 in gamesController file create router for details
+33. fixed if game is logged in or not if its owner or not and if it bought or not

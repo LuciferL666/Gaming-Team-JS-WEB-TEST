@@ -20,3 +20,5 @@ exports.hasBought = async (userId, gameId) => {
     const game = await Game.findById(gameId);
     return game.boughtBy.includes(userId);
 };
+
+exports.delete = (gameId) => Game.findByIdAndDelete(gameId);

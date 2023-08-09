@@ -47,4 +47,15 @@ router.get('/:gameId/details', async (req, res) => {
     res.render("games/details", { game, isLogin, isOwner, isBought })
 });
 
+router.get('/:gameId/delete', async (req, res) =>{
+    const gameId = req.params.gameId
+    try{
+        await gameManager.delete(gameId);
+
+        res.redirect('/games/catalog')
+    } catch (err){
+        res.redirect(`/games/${gameId}/details`, {error: 'Unsuccessful game deletion'})
+    }
+})
+
 module.exports = router;

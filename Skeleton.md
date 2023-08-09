@@ -97,3 +97,4 @@
     * 32.1 move details.html in games folder in view then change it to hbs and delete all accept main
     * 32.2 in gamesController file create router for details
 33. fixed if game is logged in or not if its owner or not and if it bought or not
+34. Delete game, meaning create router in gameController then exports delete function in gameManager and in details fix button for delete 

@@ -98,3 +98,9 @@
     * 32.2 in gamesController file create router for details
 33. fixed if game is logged in or not if its owner or not and if it bought or not
 34. Delete game, meaning create router in gameController then exports delete function in gameManager and in details fix button for delete 
+35. Edit page
+    * 35.1 move edit.html to games
+    * 35.2 delete all accept main and change it to hbs
+    * 35.3 put real data for name and value
+    * 35.4 create router in gameController for get and post and export edit function from gameManager
+    * 35.5 change link in details button for edit 

@@ -22,3 +22,5 @@ exports.hasBought = async (userId, gameId) => {
 };
 
 exports.delete = (gameId) => Game.findByIdAndDelete(gameId);
+
+exports.edit = (gameId, gameData) => Game.findByIdAndUpdate(gameId, gameData)

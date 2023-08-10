@@ -56,6 +56,24 @@ router.get('/:gameId/delete', async (req, res) =>{
     } catch (err){
         res.redirect(`/games/${gameId}/details`, {error: 'Unsuccessful game deletion'})
     }
-})
+});
+
+router.get('/:gameId/edit', async(req, res)=>{
+    const game = await gameManager.getOne(req.params.gameId).lean()
+    res.render('games/edit', { game })
+});
+
+router.post('/:gameId/edit', async(req, res)=>{
+    const gameId = req.params.gameId
+    const gameData = req.body;
+
+    try{
+        await gameManager.edit(gameId, gameData)
+
+        res.redirect(`/games/${gameId}/details`)
+    } catch (err){
+        res.render('games/edit', {error: 'Unable to update game', ...gameData})
+    }
+});
 
 module.exports = router;
